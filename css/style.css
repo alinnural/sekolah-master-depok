@@ -1,0 +1,428 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #062d28;
+    color: #ffffff;
+    font-family: "Gill Sans MT",Arial, Candara, san-serif;
+    font-size: 15px;
+	margin: 0px;
+   
+}
+
+.clear{
+	clear:both;
+}
+
+#container{
+	margin: auto;
+	text-align: left;
+	width: 1345px;
+	height:auto;
+}
+
+#display{
+	float:right;
+    margin:25px 30px 20px 20px; 
+    font-family:"Gill Sans MT",'Footlight MT Light', Algerian, Century;
+    font-size:18px;
+}
+
+#banner {
+	background-image:url(../gambar/banner2.png);
+	width : 1349px;
+	height: 110px;
+}
+
+#menu{
+	background-image:url(../gambar/bg_menu.gif);
+	width : 1349px;
+	height: 50px;
+	
+}
+
+#content{
+	background-image:url(../gambar/bg_content.jpg);
+	width : 1349px;
+	height: auto;
+	padding-bottom:50px;
+}
+
+#footer{
+	background-image:url(../gambar/bg_footer.png);
+	width : 1349px;
+	height: 108px;
+}
+
+#banner img{
+	margin: 0px 0px 0px 200px;
+	float:left;
+	width:130px;
+	height:150px;
+}
+
+#banner p{
+	font-family:'Footlight MT Light', Algerian, sans-serif;
+	font-size:72px;
+	margin: 0px 0px 0px 20px;
+	float:left;
+}
+
+#banner h1{
+	font-family:'Footlight MT Light', Algerian, sans-serif;
+	font-size:24px;
+	margin: 70px 0px 0px -250px;
+	color: #FFFFFF;
+	float:left;
+}
+
+#menu ul{
+	text-align:left;
+	margin: 0px;
+	padding-top:12px;
+}
+
+#menu ul li a{
+	text-decoration:none;
+	color:#a89344;
+	margin: 0px 20px;
+	font-family: "Gill Sans MT", "Footlight MT Light", Algerian, Century;
+	font-size:20px;
+}
+
+/* MENU */
+
+#nav li a:hover{
+	color:#FFCC99;
+}
+
+#nav li ul li a:hover{
+	border-top:none;
+	color:#FFCC99;
+}
+
+#nav {
+   	padding-left:330px;
+   	position:absolute;
+   	z-index:1;
+}
+
+#nav li a, #nav li {
+ 	float: left;
+}
+
+#nav li {
+ 	list-style: none;
+ 	position: relative;
+}
+
+#nav li a {
+	text-decoration: none;
+}
+
+/* Submenu */
+
+#nav li ul {
+	display: none;
+ 	position: absolute;
+   	left: 0;
+   	top: 100%;
+   	padding: 0px; margin: 0; 
+   	padding-top:13px;
+}
+
+#nav li:hover > ul {
+	 display: block;
+}
+
+#nav li ul li, #nav li ul li a {
+ 	float: none; 
+	color:#a89344;
+	font-size:20px;
+}
+
+#nav li ul li a {
+ 	width: 150px;
+ 	display: block;
+ 	background-image:url(../gambar/bg_drop.png);
+ 	padding:7px;
+}
+/*END MENU*/
+
+.judul{
+	color:#307b6f;
+}
+
+.cari{
+	float:right;
+    margin:65px -220px 0px 0px;
+}
+
+.content_kiri{	
+	float:left;	
+	margin: 20px 20px 20px 200px;
+	border-left:9px solid #b8cb02;
+	width: 250px;
+	height: 250px;
+	padding-left: 15px;
+	color:#000000;
+	font-family: "Gill Sans MT",Arial, Candara, san-serif;
+    font-size: 15px;
+}
+
+.content_tengah{
+	float:left;	
+	margin: 20px 20px 20px 50px; 
+	border-left:9px solid #ec7a00;	
+	width: 250px;
+	height: 250px;
+	padding-left: 15px;
+	color:#000000;
+	font-family: "Gill Sans MT",Arial, Candara, san-serif;
+    font-size: 15px;
+}
+
+.content_kanan{
+	float:left;	
+	margin: 20px 20px 20px 50px; 
+	border-left:9px solid #16a2dd;	
+	width: 250px;
+	height: 250px;
+	padding-left: 15px;
+	color:#000000;
+	font-family: "Gill Sans MT",Arial, Candara, san-serif;
+    font-size: 15px;
+}
+
+.content_kiri h1, .content_kanan h1, .content_tengah h1{
+	color: #009900;
+	font-size:19px;
+}
+
+.footer_kiri{	
+	margin: 20px 0px 0px -110px;
+	width:113px;
+	height:69px;
+	float:left;
+}
+
+#sosmed a ul{	
+	margin: -50px 200px 0px 0px;
+	width:30px;
+	height:30px;
+	float:right;
+}
+
+#sosmed ul{
+	margin: -50px 200px 0px 0px;
+	float:right;
+}
+
+#sosmed ul li{
+	list-style:none;
+	display:inline;
+	padding-right:10px;
+}
+
+#sosmed ul li a{
+	text-decoration:none;
+}
+
+#sosmed ul li a img{
+	width:30px;
+	height:30px;
+}
+
+.alamat{
+	font-family:"Gill Sans MT",Courier New, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	margin: 0px 0px 0px 200px;
+}
+
+.sub_menu{
+	float:left;
+	color:#FF6600;
+	margin-left:160px;
+	width:170px;
+	height:inherit;
+}
+
+.sub_menu li {
+ 	list-style: none;
+ 	position: relative;
+	border-bottom: #FF9966 dotted thin;
+	padding-top:15px;	
+}
+
+.sub_menu li a{
+	text-decoration:none;
+	color:#a89344;
+	font-family:"Gill Sans MT","Footlight MT Light", Algerian, Century;
+	font-size:20px;	
+}
+
+.sub_menu a:hover{
+	color:#990000;
+	opacity:0.7;
+}
+
+#content .pendaftaran{
+	margin-left:250px;
+	margin-right:250px;
+	margin-bottom:-50px;
+	background-image:url(../gambar/bg_form.jpg);
+	padding-left:100px;
+	padding-right:100px;
+	padding-top:0px;
+	padding-bottom:50px;
+	font-family:"Gill Sans MT","Footlight MT Light", Algerian, Century;
+	font-size:18px;
+	color:#000000;
+}
+
+.gambar_form{
+	width:700px;
+	margin-top:-25px;
+}
+
+.isi {
+	color:#000000;
+	font-family: "Gill Sans MT",Arial, Candara, san-serif;
+	margin-left:30px;
+	font-size:16px;
+	float:left;
+	width:550px;
+}
+
+.judul_isi{
+	width:350px;
+	padding-top:25px;
+}
+
+.submit{
+	background-color:#062d28;
+	border:medium;
+	border-radius: 3px 3px 3px 3px;
+	color:#FFFFFF;
+	font-family: "Gill Sans MT",Arial, Candara, san-serif;
+	width:70px;
+	height:25px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.pilihan, .submit{
+	cursor:pointer;
+}
+
+.form {
+	width:450px;
+	height:20px;
+}
+
+.form_pil{
+	width:455px;
+	height:25px;
+	font-size:14px;
+}
+
+.event{	
+	float:left;
+	color:#ac3d0b;
+	margin-left:20px;
+	font-family: "Gill Sans MT Condensed",Arial, Candara, san-serif;
+	font-size:16px;
+	padding-left:40px;
+	padding-top:12px;
+}
+
+.satu_event{
+	border-bottom:thin solid #999999;
+	margin-bottom:15px;
+	padding-bottom:10px;
+}
+
+.tanggal{
+	float:left;
+	color:#999999;
+	width:60px;
+}
+
+.bulan{
+	font-size:41px;
+}
+
+.kegiatan{
+	float:left;
+	color:#000000;
+	font-size:18px;
+	margin-left:5px;
+	width:220px;
+	padding-bottom:5px;
+}
+
+.jam_tempat{
+	color:#999999;
+	font-size:16px;
+}
+
+.hub_kami{
+	color:#a89344;
+	font-size:18px;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.event img{
+	background-image:url(../gambar/bg_foto2.png);
+	padding:10px;
+	width:120px;
+}
+
+.donasi a{
+	cursor: pointer;
+	text-decoration:underline;
+	color:#307b6f;
+}
+
+.copyright{
+	border-top:2px #094037 solid; 
+	margin: 10px 200px 20px 200px;
+	padding-top:5px; 
+	text-align:left;
+}
+
+.berita{
+	border-bottom:solid 2px #ac3d0b;
+	padding-bottom:20px;
+}
+
+.berita img{
+	width:200px;
+	float:left;
+	padding-right: 20px;
+}
+
+.berita a{
+	font-size:16px;
+}
+
+.detail_berita{
+	border:#003333 2px dashed;
+	padding: 0px 20px 50px 20px;
+}
+
+.tgl_berita{
+	font-size:14px;
+	margin-top:-20px;
+	margin-bottom:20px;
+	padding-bottom:10px;
+	color:#666666;
+	width:600px;
+	border-bottom: #666666 solid thin;
+}
+
+.foto_berita img{
+	width:500px;
+	padding-bottom:10px;
+}

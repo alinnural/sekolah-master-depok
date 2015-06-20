@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Sekolah Master</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="icon" type="image/x-icon" href="gambar/icon_logo.ico" sizes="16x16" />
+<!-------------------------------------Foto slider---------------------------------------------------->
+
+<!--------------------------------------------------foto slider end--------------------------------------------------->
+<!------------------------------------------------DropDown----------------------------------------------------->
+	<!--<link rel="stylesheet" href="css/style2.css" type="text/css" />-->
+	<script type="text/javascript" src="js/scripts.js"></script>
+<!------------------------------------------------End DropDown------------------------------------------------------>
+</head>
+
+<body>
+<div id="container">
+	<div id="banner" ><img src="gambar/pita_hijau.png" />
+      <p>MASTER</p><h1>School</h1>
+<!----------------------------------------------------WAKTU---------------------------------------------------------->
+<div id="display"></div>
+<script type="text/javascript">
+	function waktu()
+	{
+		var date = new Date();
+		var hari = new Array("Minggu","Senin","Selasa","Rabu","Kamis","Jum'at","Sabtu");
+		var tanggal = date.getDate();
+		tanggal = tanggal < 10 ? "0" + tanggal : tanggal;
+		var bulan = new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
+		var tahun = date.getFullYear();
+		var jam = date.getHours();
+		jam = jam < 10 ? "0" + jam : jam;
+		var menit = date.getMinutes();
+		menit = menit < 10 ? "0" + menit : menit;
+		var detik = date.getSeconds();
+		detik = detik < 10 ? "0" + detik : detik;
+		
+		window.document.getElementById("display").innerHTML = hari[date.getDay()] + ", " + tanggal + " " + bulan[date.getMonth()] + " " + tahun + " " + jam + ":" + menit + ":" + detik;
+		//getElementById = menulis di dalam display, innerHTML -> karena div tidak ada values nya maka pakai innerHTML;
+		setTimeout("waktu();", 1000); //setTimeout(call, duration); //call -> memanggil nama fungsi, 1000 -> durasi (sauannya milidetik)
+	}	
+	waktu();
+</script>
+<!----------------------------------------------------end waktu-------------------------------------------------------->
+      <div class="cari">
+    	<input type="text" placeholder="cari di sini.." />
+    </div>
+    <div class="cari">
+        <input type="image" src="gambar/search_button.png" />
+    </div>
+    </div>
+<div id="menu">
+<!---------------------------------------------------------DropDown----------------------------------------------------->
+<ul id="nav">
+	<li><a href="index.html">Beranda</a></li>
+	<li><a href="profil.html">Profil</a>
+		<ul>
+			<li><a href="profil.html#visi_misi">Visi & Misi</a></li>
+			<li><a href="profil.html#tujuan_sekolah">Tujuan Sekolah</a></li>
+			<li><a href="profil.html#prestasi">Prestasi</a></li>	
+		</ul>
+	</li>
+	<li><a href="akademik.html">Akademik</a>
+    	<ul>
+			<li><a href="akademik.html#tingkat_pendidikan">Tingkat Pendidikan</a></li>
+			<li><a href="akademik.html#organisasi">Organisasi</a></li>
+		</ul>
+    </li>
+	<li><a href="galeri.html">Galeri</a></li>	
+	<li><a href="pendaftaran.html">Pendaftaran</a></li>	
+    <li><a href="donasi.html">Donasi</a>
+    	<ul>
+			<li><a href="donasi.html#kenapa_memberi">Kenapa Memberi?</a></li>
+            <li><a href="donasi.html#cara_mendonasi">Cara Mendonasi</a></li>					
+		</ul>
+    </li>		
+</ul>
+<!---------------------------------------------------------EndDropDown----------------------------------------------------->
+  </div>
+    <div id="content">
+<div class="pendaftaran">    
+<center>
+<img class="judul_isi" src="gambar/galeri.png" style="width:450px;"/></center><br />
+<div class="detail_berita">
+    <h3 class="judul">Peresmian Lab Komputer Multimedia</h3>
+    <div class="tgl_berita">
+    29 Maret 2014
+    </div>
+    <center>
+    <div class="foto_berita">
+    	<img src="gambar/galeri1.jpg" />
+    </div>
+    </center>
+</div>
+</center>
+</div>   
+  	<div class="clear"></div>
+    </div>
+    <div id="footer">
+         <br />
+        <div id="sekolah" class="alamat"></div>
+        <div id="alamat" class="alamat"></div>
+        <div id="kodepos" class="alamat"></div>
+        <div id="telepon" class="alamat"></div>
+  		<div id="sosmed">
+        	<ul>
+    	        <li>
+                <a href="https://www.facebook.com/" title="Follow Us on Facebook" target="_blank"> 
+                <img onmouseover="this.src='gambar/fb_logo_hover.png'" src="gambar/fb_logo.png" onmouseout="this.src='gambar/fb_logo.png'"/> 
+                </a>
+                </li>
+            	<li>
+                <a href="https://twitter.com/" title="Follow Us on Twitter" target="_blank"> 
+                <img onmouseover="this.src='gambar/twitter_logo_hover.png'" src="gambar/twitter_logo.png" onmouseout="this.src='gambar/twitter_logo.png'"/> 
+                </a>
+                </li>
+           	</ul>
+        </div>
+         <p class="copyright">&copy; 2014 Alin Nur Alifah</p>
+    </div>
+    
+</div>
+</body>
+</html>
+<script type="text/javascript">
+		function loadXMLDoc(filename){
+			if(window.XMLHttpRequest)
+				xhttp = new XMLHttpRequest();
+				
+			else
+				xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			
+			xhttp.open("GET", filename, false);
+			xhttp.send();
+			
+			return xhttp.responseXML;
+		}
+		var xmlDoc = loadXMLDoc("data.xml");
+		
+		function display(){
+			window.document.getElementById("sekolah").innerHTML = xmlDoc.getElementsByTagName("sekolah")[0].childNodes[0].nodeValue;
+			window.document.getElementById("alamat").innerHTML = xmlDoc.getElementsByTagName("alamat")[0].childNodes[0].nodeValue;
+			window.document.getElementById("kodepos").innerHTML = xmlDoc.getElementsByTagName("kodepos")[0].childNodes[0].nodeValue;
+			window.document.getElementById("telepon").innerHTML = xmlDoc.getElementsByTagName("telepon")[0].childNodes[0].nodeValue;
+		}
+		
+		display();
+		
+	</script>
